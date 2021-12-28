@@ -133,8 +133,8 @@ export default {
             id: order.id,
             estado: order.estado,
             cliente:  order.cliente,
-            fecha: order.fecha,
-            totalImpuesto: order.totalImpuesto,
+            fecha: order.fecha.substring(0, 10),
+            totalImpuesto: "$ " + order.totalImpuesto,
           });
         });
       });
